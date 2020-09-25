@@ -1,0 +1,10 @@
+Formal Name             Type            Example
+
+Switch  parameter       Switches        get-childitem    - Recurse
+Parameter               Option          get-childitem    -Filter *.txt
+Positional Parameter    Arguments       get-childitem    *.txt
+
+[cmdletbinding()]
+Param(
+    [Parameter valuefrompipeline=$true]
+)
